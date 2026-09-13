@@ -169,6 +169,39 @@
       margin: 20px auto 52px;
     }
 
+    .contact {
+      margin-bottom: 4px;
+    }
+
+    .contact p {
+      margin: 0;
+    }
+
+    .contact .linkedin-link {
+      margin: 5px 0;
+    }
+
+    .linkedin-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #111;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .linkedin-link a:hover,
+    .linkedin-link a:focus-visible {
+      text-decoration: underline;
+    }
+
+    .linkedin-icon {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+
     .github-link {
       margin: 18px 0;
     }
@@ -191,14 +224,6 @@
       width: 18px;
       height: 18px;
       flex: 0 0 auto;
-    }
-
-    .contact {
-      margin-bottom: 4px;
-    }
-
-    .contact p {
-      margin: 0;
     }
 
     p {
@@ -357,8 +382,28 @@
     <article>
 
       <div class="contact" id="email">
+
         <p>LANL T-4</p>
+
+        <p class="linkedin-link">
+          <a
+            href="https://www.linkedin.com/in/tyler-volkoff-46a4191b4/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="linkedin-icon"
+              src="InBug-Black.png"
+              alt=""
+              width="18"
+              height="18"
+            >
+            LinkedIn
+          </a>
+        </p>
+
         <p>lastname at lanl dot gov</p>
+
       </div>
 
       <p class="github-link">
