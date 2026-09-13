@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="E-mail and chess images">
+  <title>E-mail — T.J. Volkoff</title>
+  <style>
+    :root {
+      --ink: #222;
+      --muted: #686868;
+      --line: #d9d9d5;
+      --paper: #fafaf7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 3px;
+    }
+
+    .page {
+      width: calc(100% - 48px);
+      max-width: 1040px;
+      margin-inline: auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-block: 28px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    header a {
+      color: var(--muted);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    header a:hover,
+    header a:focus-visible {
+      color: var(--ink);
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 42px 0 80px;
+    }
+
+    .gallery {
+      width: 100%;
+      max-width: 780px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-inline: auto;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+    }
+
+    .seal {
+      grid-column: 1 / -1;
+    }
+
+    .seal img {
+      width: min(100%, 520px);
+    }
+
+    .gmail-box {
+      position: fixed;
+      z-index: 10;
+      top: 78px;
+      left: 20px;
+      padding: 8px 15px;
+      border: 2px solid var(--ink);
+      background: rgba(255, 255, 255, 0.94);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      pointer-events: none;
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.12);
+      animation: wander 36s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    .email-floater {
+      position: fixed;
+      z-index: 9;
+      top: 132px;
+      left: 24px;
+      width: min(150px, 34vw);
+      height: auto;
+      pointer-events: none;
+      filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.12));
+      animation: wander-email 44s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    @keyframes wander {
+      0%, 100% {
+        transform: translate(0, 0) rotate(-2deg);
+      }
+      24% {
+        transform: translate(calc(100vw - 155px), 10vh) rotate(2deg);
+      }
+      49% {
+        transform: translate(calc(82vw - 120px), calc(100vh - 210px)) rotate(-1deg);
+      }
+      73% {
+        transform: translate(8vw, calc(100vh - 190px)) rotate(2deg);
+      }
+    }
+
+    @keyframes wander-email {
+      0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      23% {
+        transform: translate(calc(100vw - 300px), 30vh) rotate(-2deg);
+      }
+      51% {
+        transform: translate(calc(60vw - 120px), calc(100vh - 260px)) rotate(1deg);
+      }
+      77% {
+        transform: translate(7vw, 22vh) rotate(-1deg);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        width: calc(100% - 28px);
+      }
+
+      main {
+        padding-top: 22px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 14px;
+      }
+
+      .seal { grid-column: auto; }
+
+      @keyframes wander {
+        0%, 100% {
+          transform: translate(0, 0) rotate(-2deg);
+        }
+        24% {
+          transform: translate(calc(100vw - 145px), 10vh) rotate(2deg);
+        }
+        49% {
+          transform: translate(calc(100vw - 155px), calc(100vh - 190px)) rotate(-1deg);
+        }
+        73% {
+          transform: translate(3vw, calc(100vh - 180px)) rotate(2deg);
+        }
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .gmail-box,
+      .email-floater {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gmail-box" aria-label="gmail">gmail</div>
+  <img class="email-floater" src="email.png" alt="adidasty" width="127" height="34">
+
+  <header class="page">
+    <h1>E-mail</h1>
+    <a href="mainpage_3.html">Back to main</a>
+  </header>
+
+  <main class="page">
+    <section class="gallery" aria-label="Chess gallery">
+      <figure>
+        <img src="mate2.png" alt="A chess position with a forced mate in two" width="513" height="514">
+      </figure>
+
+      <figure>
+        <img src="matein2again.png" alt="A second chess position with a forced mate in two" width="514" height="515">
+      </figure>
+
+      <figure class="seal">
+        <img src="the_seventh_seal.png" alt="A scene from The Seventh Seal showing a chess game" width="640" height="480">
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
