@@ -1,0 +1,73 @@
+:root {
+  --ink: #222;
+  --muted: #686868;
+  --line: #d9d9d5;
+  --paper: #fafaf7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.page {
+  width: calc(100% - 48px);
+  max-width: 1040px;
+  margin-inline: auto;
+}
+
+header.page {
+  padding: 28px 0 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+header.page a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+header.page a:hover,
+header.page a:focus-visible {
+  text-decoration: underline;
+}
+
+main.page {
+  padding: 22px 0 40px;
+}
+
+p {
+  margin: 0 0 1.1em;
+}
+
+.publications-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.publications-list li {
+  margin-bottom: 0.9em;
+}
