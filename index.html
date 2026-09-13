@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="T.J. Volkoff">
   <title>T.J. Volkoff</title>
+
   <style>
     :root {
       --text: #202124;
@@ -169,27 +170,28 @@
     }
 
     .github-link {
-  margin: 18px 0;
-}
+      margin: 18px 0;
+    }
 
-.github-link a {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  color: #111;
-  text-decoration: none;
-  font-weight: 600;
-}
+    .github-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-.github-link a:hover {
-  text-decoration: underline;
-}
+    .github-link a:hover,
+    .github-link a:focus-visible {
+      text-decoration: underline;
+    }
 
-.github-icon {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 auto;
-}
+    .github-icon {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+    }
 
     .contact {
       margin-bottom: 4px;
@@ -318,95 +320,188 @@
       .layout {
         width: calc(100% - 36px);
       }
-
     }
   </style>
 </head>
+
 <body id="top">
+
   <a class="skip-link" href="#content">Skip to main content</a>
 
   <header class="site-header">
     <div class="header-inner">
+
       <a class="site-title" href="index.html">T.J. Volkoff</a>
+
       <nav class="site-nav" aria-label="Site navigation">
         <a href="email.html">E-mail</a>
         <a href="presentations.html">Presentations</a>
         <a href="publicationpage.html">Publications</a>
+
         <details class="nav-dropdown">
           <summary>Teaching</summary>
+
           <div class="dropdown-window">
-            <a href="teaching.html">Field theory and many body physics, KU Fall 2016</a>
+            <a href="teaching.html">
+              Field theory and many body physics, KU Fall 2016
+            </a>
           </div>
         </details>
+
       </nav>
     </div>
   </header>
 
   <main class="layout" id="content">
+
     <article>
+
       <div class="contact" id="email">
         <p>LANL T-4</p>
         <p>lastname at lanl dot gov</p>
       </div>
 
       <p class="github-link">
-  <a href="https://github.com/deconfinedexcitation/CVQS"
-     target="_blank"
-     rel="noopener noreferrer">
-    <svg
-      class="github-icon"
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-    >
-      <path fill="currentColor" d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.3 9.2 7.8 10.7.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4C17.1 5 18.1 5.3 18.1 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.5-1.5 7.8-5.7 7.8-10.7C23.4 5.8 18.3.7 12 .7z"/>
-    </svg>
-    CVQS on GitHub
-  </a>
-</p>
+        <a
+          href="https://github.com/deconfinedexcitation/CVQS"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            class="github-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              fill="currentColor"
+              d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.3 9.2 7.8 10.7.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4C17.1 5 18.1 5.3 18.1 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.5-1.5 7.8-5.7 7.8-10.7C23.4 5.8 18.3.7 12 .7z"
+            />
+          </svg>
+
+          CVQS on GitHub
+        </a>
+      </p>
+
       <div>
-        <p>The CVQS package contains implementations of several continuous-variable operations, e.g., sparse implementations of displacements, squeezing that work at high energies. Also implementations of non-Gaussian states of atomic ensembles such as particle-correlated states, spin squeezed states, etc.</p>
+        <p>
+          The CVQS package contains implementations of several continuous-variable
+          operations, e.g., sparse implementations of displacements, squeezing
+          that work at high energies. Also implementations of non-Gaussian states
+          of atomic ensembles such as particle-correlated states, spin squeezed
+          states, etc.
+        </p>
       </div>
 
       <h1>Research</h1>
-      <p>I work on 1) the physics of degenerate quantum matter, e.g., superconductors, interacting bosons, coherent light, and 2) quantum information theory. On the fundamental side, I'm interested in properties and applications of "Schrödinger cat" states in separable Hilbert space. On the practical side, I work on quantum algorithms. Here are some recent research lines:</p>
+
+      <p>
+        I work on 1) the physics of degenerate quantum matter, e.g.,
+        superconductors, interacting bosons, coherent light, and 2) quantum
+        information theory. On the fundamental side, I'm interested in properties
+        and applications of "Schrödinger cat" states in separable Hilbert space.
+        On the practical side, I work on quantum algorithms. Here are some recent
+        research lines:
+      </p>
 
       <ul>
-        <li>Approximate programmable quantum processors</li>
-        <li>Trainability of variational quantum algorithms for unitary compiling, unstructured search, eigenvalue estimation, photon sampling.</li>
-        <li>Quantum information with non-Gaussian states: linear bosonic channels, bosonic quantum error correction</li>
-        <li>Continuous-variable quantum coherence</li>
-        <li>Quantum state macroscopicity</li>
-        <li>Distinguishability of many-body quantum states</li>
-        <li>Construction of optimal probe states for quantum metrology protocols</li>
-        <li>Imperfect Bose gases and superfluids</li>
+        <li>
+          Approximate programmable quantum processors
+        </li>
+
+        <li>
+          Trainability of variational quantum algorithms for unitary compiling,
+          unstructured search, eigenvalue estimation, photon sampling.
+        </li>
+
+        <li>
+          Quantum information with non-Gaussian states: linear bosonic channels,
+          bosonic quantum error correction
+        </li>
+
+        <li>
+          Continuous-variable quantum coherence
+        </li>
+
+        <li>
+          Quantum state macroscopicity
+        </li>
+
+        <li>
+          Distinguishability of many-body quantum states
+        </li>
+
+        <li>
+          Construction of optimal probe states for quantum metrology protocols
+        </li>
+
+        <li>
+          Imperfect Bose gases and superfluids
+        </li>
       </ul>
 
-      <p class="motivation">A major motivation for my research is the fact that the most immediately accessible quantum technologies exploit the quantum behavior of objects that have greater spatial extent, mass, or intensity than the objects of the microworld for which the quantum statistical theory was originally developed.</p>
+      <p class="motivation">
+        A major motivation for my research is the fact that the most immediately
+        accessible quantum technologies exploit the quantum behavior of objects
+        that have greater spatial extent, mass, or intensity than the objects of
+        the microworld for which the quantum statistical theory was originally
+        developed.
+      </p>
+
     </article>
 
     <aside class="figures" aria-label="Research figures">
+
       <figure class="bloch-figure">
-        <img src="bloch-trajectory.gif" alt="Qubit state trajectory moving through the Bloch ball" width="541" height="541">
-        <figcaption>Above: Example of a qubit state trajectory in the Bloch ball when interacting with another qubit.</figcaption>
+        <img
+          src="bloch-trajectory.gif"
+          alt="Qubit state trajectory moving through the Bloch ball"
+          width="541"
+          height="541"
+        >
+
+        <figcaption>
+          Above: Example of a qubit state trajectory in the Bloch ball when
+          interacting with another qubit.
+        </figcaption>
       </figure>
 
       <figure class="sound-profile">
-        <figcaption>Below: Velocity magnitude profile (bright yellow is the speed of sound) of a weakly interacting Bose gas when its two lowest modes are prepared in a Schrodinger cat state consisting of a superposition of uniformly distributed atoms ("DEAD") and a quantum vortex of unit circulation ("ALIVE"). Distance unit is ξ<sub>0</sub>, the vortex core radius.</figcaption>
+
+        <figcaption>
+          Below: Velocity magnitude profile (bright yellow is the speed of sound)
+          of a weakly interacting Bose gas when its two lowest modes are prepared
+          in a Schrodinger cat state consisting of a superposition of uniformly
+          distributed atoms ("DEAD") and a quantum vortex of unit circulation
+          ("ALIVE"). Distance unit is ξ<sub>0</sub>, the vortex core radius.
+        </figcaption>
+
         <div class="sound-image-crop">
-          <img src="sgimage.png" alt="Velocity magnitude profile surrounding a vortex in a weakly interacting Bose gas" width="794" height="1123">
+          <img
+            src="sgimage.png"
+            alt="Velocity magnitude profile surrounding a vortex in a weakly interacting Bose gas"
+            width="794"
+            height="1123"
+          >
         </div>
+
       </figure>
+
     </aside>
+
   </main>
 
   <script>
     const teachingMenu = document.querySelector('.nav-dropdown');
 
     document.addEventListener('click', (event) => {
-      if (teachingMenu.open && !teachingMenu.contains(event.target)) {
+      if (
+        teachingMenu.open &&
+        !teachingMenu.contains(event.target)
+      ) {
         teachingMenu.removeAttribute('open');
       }
     });
   </script>
+
 </body>
 </html>
