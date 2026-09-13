@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="E-mail and chess images">
-  <title>E-mail — T.J. Volkoff</title>
-  <link rel="stylesheet" href="page-shared.css?v=2">
-  <style>
 
+  <title>E-mail — T.J. Volkoff</title>
+
+  <link rel="stylesheet" href="page-shared.css">
+
+  <style>
     .gallery {
       width: 100%;
       max-width: 780px;
@@ -68,14 +70,23 @@
       0%, 100% {
         transform: translate(0, 0) rotate(-2deg);
       }
+
       24% {
         transform: translate(calc(100vw - 155px), 10vh) rotate(2deg);
       }
+
       49% {
-        transform: translate(calc(82vw - 120px), calc(100vh - 210px)) rotate(-1deg);
+        transform: translate(
+          calc(82vw - 120px),
+          calc(100vh - 210px)
+        ) rotate(-1deg);
       }
+
       73% {
-        transform: translate(8vw, calc(100vh - 190px)) rotate(2deg);
+        transform: translate(
+          8vw,
+          calc(100vh - 190px)
+        ) rotate(2deg);
       }
     }
 
@@ -83,39 +94,64 @@
       0%, 100% {
         transform: translate(0, 0) rotate(0deg);
       }
+
       23% {
-        transform: translate(calc(100vw - 300px), 30vh) rotate(-2deg);
+        transform: translate(
+          calc(100vw - 300px),
+          30vh
+        ) rotate(-2deg);
       }
+
       51% {
-        transform: translate(calc(60vw - 120px), calc(100vh - 260px)) rotate(1deg);
+        transform: translate(
+          calc(60vw - 120px),
+          calc(100vh - 260px)
+        ) rotate(1deg);
       }
+
       77% {
-        transform: translate(7vw, 22vh) rotate(-1deg);
+        transform: translate(
+          7vw,
+          22vh
+        ) rotate(-1deg);
       }
     }
 
     @media (max-width: 700px) {
-
       .gallery {
         grid-template-columns: 1fr;
         gap: 14px;
         margin-top: 14px;
       }
 
-      .seal { grid-column: auto; }
+      .seal {
+        grid-column: auto;
+      }
 
       @keyframes wander {
         0%, 100% {
           transform: translate(0, 0) rotate(-2deg);
         }
+
         24% {
-          transform: translate(calc(100vw - 145px), 10vh) rotate(2deg);
+          transform: translate(
+            calc(100vw - 145px),
+            10vh
+          ) rotate(2deg);
         }
+
         49% {
-          transform: translate(calc(100vw - 155px), calc(100vh - 190px)) rotate(-1deg);
+          transform: translate(
+            calc(100vw - 155px),
+            calc(100vh - 190px)
+          ) rotate(-1deg);
         }
+
         73% {
-          transform: translate(3vw, calc(100vh - 180px)) rotate(2deg);
+          transform: translate(
+            3vw,
+            calc(100vh - 180px)
+          ) rotate(2deg);
         }
       }
     }
@@ -128,9 +164,18 @@
     }
   </style>
 </head>
+
 <body>
-  <div class="gmail-box" aria-label="gmail">gmail</div>
-  <img class="email-floater" src="email.png" alt="adidasty" width="127" height="34">
+
+  <div class="gmail-box">gmail</div>
+
+  <img
+    class="email-floater"
+    src="email.png"
+    alt=""
+    width="127"
+    height="34"
+  >
 
   <header class="page">
     <h1>Email</h1>
@@ -139,18 +184,36 @@
 
   <main class="page">
     <section class="gallery" aria-label="Chess gallery">
+
       <figure>
-        <img src="mate2.png" alt="A chess position with a forced mate in two" width="513" height="514">
+        <img
+          src="mate2.png"
+          alt="A chess position with a forced mate in two"
+          width="513"
+          height="514"
+        >
       </figure>
 
       <figure>
-        <img src="matein2again.png" alt="A second chess position with a forced mate in two" width="514" height="515">
+        <img
+          src="matein2again.png"
+          alt="A second chess position with a forced mate in two"
+          width="514"
+          height="515"
+        >
       </figure>
 
       <figure class="seal">
-        <img src="the_seventh_seal.png" alt="A scene from The Seventh Seal showing a chess game" width="640" height="480">
+        <img
+          src="the_seventh_seal.png"
+          alt="A scene from The Seventh Seal showing a chess game"
+          width="640"
+          height="480"
+        >
       </figure>
+
     </section>
   </main>
+
 </body>
 </html>
