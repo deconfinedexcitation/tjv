@@ -71,3 +71,33 @@ p {
 .publications-list li {
   margin-bottom: 0.9em;
 }
+
+.publication-link {
+  display: block;
+  width: 72px;
+  height: 29px;
+  margin-top: 7px;
+  overflow: hidden;
+  border: 1px solid #c9c9c4;
+  border-radius: 3px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.publication-link:hover,
+.publication-link:focus-visible {
+  border-color: #7b7b76;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.publication-link--arxiv {
+  background-image: url("https://info.arxiv.org/brand/images/brand-logo-primary.jpg");
+  background-size: 72px auto;
+}
+
+.publication-link--aps {
+  background-image: url("https://cdn.journals.aps.org/development/journals/images/tailwind/footer-logo.png");
+  background-size: 48px auto;
+}
