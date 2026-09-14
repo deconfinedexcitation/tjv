@@ -15,8 +15,25 @@
       max-width: 780px;
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
+      column-gap: 22px;
+      row-gap: 8px;
       margin-inline: auto;
+    }
+
+    .chess-caption {
+      grid-column: 1;
+      grid-row: 1;
+      margin: 0;
+    }
+
+    .chess-first {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .chess-second {
+      grid-column: 2;
+      grid-row: 2;
     }
 
     figure {
@@ -30,9 +47,14 @@
 
     .seal {
       grid-column: 1 / -1;
+      grid-row: 3;
+      display: flex;
+      justify-content: center;
+      margin-top: 14px;
     }
 
     .seal img {
+      display: block;
       width: min(100%, 520px);
     }
 
@@ -119,13 +141,14 @@
 
     @media (max-width: 700px) {
       .gallery {
-        grid-template-columns: 1fr;
-        gap: 14px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 10px;
+        row-gap: 6px;
         margin-top: 14px;
       }
 
       .seal {
-        grid-column: auto;
+        margin-top: 8px;
       }
 
       @keyframes wander {
@@ -184,8 +207,8 @@
 
   <main class="page">
     <section class="gallery" aria-label="Chess gallery">
-      <figcaption>Mate in two.</figcaption>
-      <figure>
+      <p class="chess-caption">Mate in two.</p>
+      <figure class="chess-first">
         <img
           src="mate2.png"
           alt="A chess position with a forced mate in two"
@@ -194,7 +217,7 @@
         >
       </figure>
 
-      <figure>
+      <figure class="chess-second">
         <img
           src="matein2again.png"
           alt="A second chess position with a forced mate in two"
